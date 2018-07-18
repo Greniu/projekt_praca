@@ -1,0 +1,52 @@
+.footer {
+    position: static;
+    bottom: 0;
+    padding: 20px;
+    color: $secondaryColor;
+    background: $footerBackgroundColor;
+    text-align: center;
+
+    .container {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+
+        .title {
+            font-size: 16px;
+            font-family: Millunium-Bold, sans-serif;
+            text-align: left;
+            letter-spacing: 1px;
+        }
+
+        .text-left {
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .footer-list {
+            font-size: 12px;
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+    }
+
+    .cp-right {
+        display: block;
+        margin: auto;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (min-width: $large) {
+
+    .footer {
+        padding: 30px 0;
+
+        .container {
+            width: $large;
+        }
+    }
+
+}

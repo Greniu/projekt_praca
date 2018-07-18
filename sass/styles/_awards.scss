@@ -1,0 +1,112 @@
+.content-container {
+
+    .content-awards {
+        background: $backgroundBodyColor;
+        margin-top: -110px;
+        padding-bottom: 40px;
+
+        .container-awards {
+            text-align: center;
+            padding-top: 140px;
+            margin: 20px;
+
+            .sub-title {
+                color: $secondarySubTitleColor;
+            }
+
+            h3 {
+                width: auto;
+            }
+
+            .row {
+                display: block;
+
+                .col {
+
+                    h2 {
+                        font-size: 40px;
+                        color: $placeColor;
+                        margin-bottom: 20px;
+
+                        &.first-place {
+                            color: $activeButtonColor;
+                        }
+                    }
+
+                    p {
+                        font-family: Raleway-Bold, sans-serif;
+                        font-size: 18px;
+                        width: 90%;
+                        margin: 20px auto 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $medium) {
+
+    .content-container {
+
+        .content-awards {
+            padding-bottom: 80px;
+
+            .container-awards {
+                padding-top: 200px;
+                margin: auto;
+
+                h3 {
+                    width: 600px;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: center;
+
+                    .col {
+                        flex-basis: auto;
+                        flex-grow: 0;
+                        width: 33%;
+
+                        .image-reward {
+                            display: flex;
+                            justify-content: center;
+                            height: 80px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $large) {
+
+    .content-container {
+
+        .content-awards {
+
+            .container-awards {
+
+                .row {
+                    margin: auto;
+
+                    .col {
+                        flex-basis: 0;
+                        flex-grow: 1;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+}

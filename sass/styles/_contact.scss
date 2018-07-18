@@ -1,0 +1,185 @@
+.content-container {
+
+    .content-contact {
+        background: $backgroundBodyColor;
+        margin-top: -150px;
+
+        .container-contact {
+            padding-top: 140px;
+
+            .row {
+
+                .col-1 {
+                    flex-basis: auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .col-2 {
+                    flex-basis: auto;
+                    margin: 20px;
+
+                    h3 {
+                        margin: 5px 0 30px;
+                    }
+
+                    .form {
+                        background: $formBackgroundColor;
+
+                        .form-name,
+                        .form-email,
+                        .form-message {
+                            position: relative;
+
+                            .input-form {
+                                font-family: Roboto Regular, sans-serif;
+                                border: 0;
+                                border-bottom: 1px solid $borderColor;
+                                font-size: 14px;
+                                padding-bottom: 10px;
+                                background: $formBackgroundColor;
+                                margin: 0;
+                                width: 100%;
+                                letter-spacing: 0;
+                                resize: none;
+                                white-space: nowrap;
+                                overflow-x: hidden;
+                            }
+
+                            .text-validate {
+                                display: none;
+                                color: $textError;
+                                font-size: 12px;
+                                padding: 6px;
+                                background: $backgroundContactColor;
+                            }
+                        }
+
+                        .form-name ,
+                        .form-email {
+                            display: inline-block;
+                            margin-bottom: 20px;
+                            width: 100%;
+                        }
+
+                        .form-email {
+                            float: right;
+                        }
+
+                        .form-message {
+                            margin-top: 10px;
+                            width: calc(100% - 30px);
+
+                            .input-form {
+                                height: 70px;
+                                border: 1px solid $borderColor;
+                                padding: 15px;
+                                border-radius: 2px;
+                                background: $backgroundSecondBodyColor;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $medium) {
+
+    .content-container {
+
+        .content-contact {
+
+            .container-contact {
+                padding: 160px 0 0;
+                margin: auto;
+
+                .row {
+
+                    .col-1 {
+                        flex-basis: auto;
+                        margin: 20px;
+                        height: 400px;
+                        overflow: hidden;
+
+                        img {
+                            margin-top: -35px;
+                        }
+                    }
+
+                    .col-2 {
+                        margin: 60px;
+
+                        .form {
+
+                            .form-name ,
+                            .form-email {
+                                width: 48%;
+                            }
+                        }
+
+                        button {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $large) {
+
+    .content-container {
+
+        .content-contact {
+            margin-top: 0;
+
+            .container-contact {
+                padding: 100px 0;
+
+                .row {
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+
+                    .col-1 {
+                        margin: 0;
+                        height: auto;
+                        max-width: 45%;
+
+                        img {
+                            margin-top: 0;
+                        }
+                    }
+
+                    .col-2 {
+                        max-width: 55%;
+                        margin: 0 0 0 60px;
+
+                        .form {
+
+                            .form-name ,
+                            .form-email {
+                                margin-bottom: 10px;
+                            }
+
+                            .form-message {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

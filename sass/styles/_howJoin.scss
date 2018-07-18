@@ -1,0 +1,204 @@
+.content-container {
+
+    .content-how-join {
+        background: $backgroundSecondBodyColor;
+
+        .container-how-join {
+            padding: 40px 0;
+
+            .row {
+
+                .col-1 {
+                    flex-basis: auto;
+                    flex-grow: 0;
+                    z-index: 2;
+
+                    .info-box-first {
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .col-2 {
+                    flex-basis: auto;
+                    flex-grow: 0;
+                    margin: -40px 0 0;
+                    z-index: 1;
+
+                    .info-box-second {
+                        position: relative;
+                        padding: 80px 20px 30px;
+
+                        p {
+                            margin: 0;
+
+                            &:before {
+                                content: '"';
+                                font-family: Millunium-Bold, sans-serif;
+                                position: absolute;
+                                top: 160px;
+                                right: 40px;
+                                font-size: 220px;
+                                opacity: 0.1;
+                            }
+                        }
+
+                        .social-proof {
+                            margin-top: 40px;
+
+                            img {
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 70px;
+                                margin-right: 15px;
+                                background: $backgroundBodyColor;
+                                border-radius: 100%;
+                            }
+
+                            .social-description {
+                                display: inline-block;
+                                vertical-align: middle;
+
+                                h5 {
+                                    margin: 0;
+                                }
+
+                                p {
+                                    font-size: 12px;
+
+                                    &:before {
+                                        content: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $medium) {
+
+    .content-container {
+
+        .content-how-join {
+
+            .container-how-join {
+
+                .row {
+                    margin: 20px;
+
+                    .col-1,
+                    .col-2 {
+                        flex-basis: auto;
+                        flex-grow: 0;
+                        width: 85%;
+                    }
+
+                    .col-1 {
+
+                        .info-box-first {
+
+                            button {
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    .col-2 {
+                        margin: -40px 0 0 15%;
+
+                        .info-box-second {
+                            padding: 80px 30px 30px 100px;
+
+                            p {
+
+                                &:before {
+                                    top: 120px;
+                                    left: 40px;
+                                    font-size: 120px;
+                                    opacity: 0.4;
+                                }
+                            }
+
+                            .social-description {
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $large) {
+
+    .content-container {
+
+        .content-how-join {
+
+            .container-how-join {
+                padding: 100px 0;
+
+                .row {
+                    margin: auto;
+                    display: flex;
+
+                    .col-1,
+                    .col-2 {
+                        max-width: 51%;
+
+                        p {
+
+                        }
+                    }
+
+                    .col-1 {
+
+                        .info-box-first {
+
+                            button {
+                                width: auto;
+                            }
+                        }
+                    }
+
+                    .col-2 {
+                        margin: 50px 0 0 -60px;
+
+                        .info-box-second {
+                            padding: 40px 30px 40px 140px;
+
+                            p {
+
+                                &:before {
+                                    top: 76px;
+                                    left: 80px;
+                                    font-size: 120px;
+                                    opacity: 0.4;
+                                }
+                            }
+
+                            .social-description {
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
