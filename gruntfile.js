@@ -17,8 +17,8 @@ module.exports = function(grunt) {
                     browsers: ['opera 12', 'ff 15', 'chrome 25', 'ie 9'],
                     map: true
                 },
-                files:{
-                    'css/main.css':'css/main.css'
+                files: {
+                    'css/main.css': 'css/main.css'
                 }
             }
         }
