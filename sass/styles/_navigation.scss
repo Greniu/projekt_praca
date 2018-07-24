@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     background: $navBarBackgroundTopColor;
-    padding: 20px 0;
+    padding: 5px 0 10px 0;
     border: none;
     z-index: 999;
     transition: .4s ease-in-out;
@@ -21,9 +21,10 @@
             display: inline-block;
             width: 60px;
             overflow: hidden;
+            transition: .3s;
 
             .logo-img {
-                margin: 16px 20px 12px;
+                margin: 12px 20px 4px;
                 cursor: pointer;
                 transition: .3s;
             }
@@ -32,7 +33,7 @@
         .burger {
             position: relative;
             float: right;
-            top: 20px;
+            top: 16px;
             right: 20px;
             cursor: pointer;
             z-index: 2;
@@ -50,7 +51,7 @@
             display: none;
             position: relative;
             float: right;
-            top: 15px;
+            top: 11px;
             right: 20px;
             cursor: pointer;
             z-index: 2;
@@ -141,8 +142,18 @@
 
     .navbar-container {
 
+        &.navbar-fixed {
+
+            .navbar-header {
+
+                .crop {
+                    width: 36px;
+                }
+            }
+        }
+
         .navbar-header {
-            margin: 20px;
+            margin: 15px 20px;
 
             .crop {
                 height: 36px;
@@ -194,6 +205,17 @@
 @media only screen and (min-width: $large) {
 
     .navbar-container {
+        padding: 20px 0;
+
+        &.navbar-fixed {
+
+            .navbar-header {
+
+                .crop {
+                    width: 180px;
+                }
+            }
+        }
 
         .navbar-header {
             width: $large;

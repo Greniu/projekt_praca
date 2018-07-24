@@ -35,7 +35,7 @@ const jb = {
         this.navigationListHref.forEach(function(value) {
             const contentSwitchId = document.getElementById(value.href.split("#")[1]);
             window.addEventListener('scroll', function () {
-                if (window.scrollY >= (contentSwitchId.offsetTop)) {
+                if (window.scrollY >= (contentSwitchId.offsetTop) - 1) {
                     const active = document.getElementsByClassName("active");
                     active[0].className = active[0].className.replace(" active", "");
                     value.className = " active";
