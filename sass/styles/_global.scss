@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-button {
+.button {
     color: white;
     padding: 14px 0;
     font-family: Raleway-Bold, sans-serif;
@@ -73,16 +73,13 @@ p {
 
 .content-container {
     width: 100%;
+}
 
-    .content-list {
-
-        .container-global {
-            position: relative;
-            width: auto;
-            padding: 40px 0 0;
-            margin: auto;
-        }
-    }
+.container-global {
+    position: relative;
+    width: auto;
+    padding: 40px 0 0;
+    margin: auto;
 }
 
 .info-box-first {
@@ -115,10 +112,7 @@ p {
     display: flex;
     flex-wrap: wrap;
 
-    .col,
-    .col-1,
-    .col-2,
-    .col-3 {
+    .col {
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
@@ -127,7 +121,7 @@ p {
 
 @media only screen and (min-width: $medium) {
 
-    button {
+    .button {
         display: inline-block;
         vertical-align: middle;
         transform: perspective(1px) translateZ(0);
@@ -171,13 +165,10 @@ p {
 
     .content-container {
         width: 100%;
+    }
 
-        .content-list {
-
-            .container-global {
-                padding: 100px 0 0;
-            }
-        }
+    .container-global {
+        padding: 100px 0 0;
     }
 
     .info-box-first {
@@ -194,7 +185,7 @@ p {
 
 @media only screen and (min-width: $large) {
 
-    button {
+    .button {
 
         &:before {
             pointer-events: none;
@@ -222,14 +213,8 @@ p {
         }
     }
 
-    .content-container {
-
-        .content-list {
-
-            .container-global {
-                width: $large;
-            }
-        }
+    .container-global {
+        width: $large;
     }
 
 }

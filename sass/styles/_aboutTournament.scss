@@ -1,82 +1,73 @@
-.content-container {
+.content-about-tournament {
+    background: $backgroundSecondBodyColor;
+}
 
-    .content-about-tournament {
-        background: $backgroundSecondBodyColor;
+.row-about-tournament-first {
 
-        .container-about-tournament {
+    .button {
+        width: 100%;
+    }
 
-            .row {
+    .col-1-about-tournament {
+        flex-basis: auto;
+        flex-grow: 0;
+        max-width: 100%;
+        z-index: 2;
+    }
 
-                .col-1 {
-                    flex-basis: auto;
-                    flex-grow: 0;
-                    max-width: 100%;
-                    z-index: 2;
+    .col-2-about-tournament {
+        flex-basis: auto;
+        flex-grow: 0;
+        margin-top: -40px;
+        max-width: 100%;
+        overflow: hidden;
+        z-index: 1;
 
-                    .info-box-first {
+        .about-tournament-image {
+            width: 200%;
+            margin-left: -36%;
 
-                        button {
-                            width: 100%;
-                        }
+            @media only screen and (min-width: 520px) {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .col-3-about-tournament {
+        max-width: 100%;
+        margin: auto;
+        z-index: 1;
+
+        .info-box-second {
+            padding: 40px;
+            width: auto;
+            margin: -5px auto 0;
+
+            .sub-title {
+                color: $primarySubTitleColor;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .row-about-tournament-second {
+                display: block;
+
+                .col {
+                    margin-top: 30px;
+
+                    .number {
+                        font-family: Millunium-Bold, sans-serif;
+                        text-align: center;
+                        font-size: 42px;
                     }
-                }
 
-                .col-2 {
-                    flex-basis: auto;
-                    flex-grow: 0;
-                    margin-top: -40px;
-                    max-width: 100%;
-                    overflow: hidden;
-                    z-index: 1;
-
-                    img {
-                        width: 200%;
-                        margin-left: -36%;
-
-                        @media only screen and (min-width: 520px) {
-                            width: 100%;
-                            margin-left: 0;
-                        }
-                    }
-                }
-
-                .col-3 {
-                    max-width: 100%;
-                    margin: auto;
-                    z-index: 1;
-
-                    .info-box-second {
-                        padding: 40px;
-                        width: auto;
-                        margin: -5px auto 0;
-
-                        .sub-title {
-                            color: $primarySubTitleColor;
-                            text-align: center;
-                            margin-bottom: 20px;
-                        }
-
-                        .row {
-                            display: block;
-
-                            .col {
-                                margin-top: 30px;
-
-                                .number {
-                                    font-family: Millunium-Bold, sans-serif;
-                                    text-align: center;
-                                    font-size: 42px;
-                                }
-
-                                p {
-                                    font-size: 16px;
-                                    margin: 0;
-                                    text-align: center;
-                                    font-family: Raleway-Bold, sans-serif;
-                                    line-height: 18px;
-                                }
-                            }
-                        }
+                    p {
+                        font-size: 16px;
+                        margin: 0;
+                        text-align: center;
+                        font-family: Raleway-Bold, sans-serif;
+                        line-height: 18px;
                     }
                 }
             }
@@ -86,51 +77,42 @@
 
 @media only screen and (min-width: $medium) {
 
-    .content-container {
+    .row-about-tournament-first {
+        margin: 0 20px;
 
-        .content-about-tournament {
+        .col-1-about-tournament {
+            order: 1;
+            max-width: 75%;
 
-            .container-about-tournament {
+            .info-box-first {
 
-                .row {
-                    margin: 0 20px;
-
-                    .col-1 {
-                        order: 1;
-                        max-width: 75%;
-
-                        .info-box-first {
-
-                            button {
-                                width: inherit;
-                            }
-                        }
-                    }
-
-                    .col-2 {
-                        order: 3;
-                        margin: -20px 0 0 40px;
-                        max-width: 75%;
-
-                        img {
-                            width: 100%;
-                            margin: auto;
-                        }
-                    }
-
-                    .col-3 {
-                        right: 20px;
-                        position: absolute;
-                        max-width: 29%;
-                        order: 2;
-                        margin: 110px 0 0 -30px;
-
-                        .info-box-second {
-                            padding: 40px 20px 40px 50px;
-                            margin: auto;
-                        }
-                    }
+                .button {
+                    width: inherit;
                 }
+            }
+        }
+
+        .col-2-about-tournament {
+            order: 3;
+            margin: -20px 0 0 40px;
+            max-width: 75%;
+
+            .about-tournament-image {
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+        .col-3-about-tournament {
+            right: 20px;
+            position: absolute;
+            max-width: 29%;
+            order: 2;
+            margin: 110px 0 0 -30px;
+
+            .info-box-second {
+                padding: 40px 20px 40px 50px;
+                margin: auto;
             }
         }
     }
@@ -139,64 +121,55 @@
 
 @media only screen and (min-width: $large) {
 
-    .content-container {
+    .row-about-tournament-first {
+        margin: auto;
 
-        .content-about-tournament {
+        .col-1-about-tournament {
+            order: 1;
+            max-width: 100%;
 
-            .container-about-tournament {
+            .info-box-first {
+                width: 43%;
+                margin: 0;
 
-                .row {
-                    margin: auto;
+                .button {
+                    width: auto;
+                }
+            }
+        }
 
-                    .col-1 {
-                        order: 1;
-                        max-width: 100%;
+        .col-2-about-tournament {
+            position: absolute;
+            order: 2;
+            top: 120px;
+            right: 0;
+            margin: auto;
+            max-width: 58%;
 
-                        .info-box-first {
-                            width: 43%;
-                            margin: 0;
+            .about-tournament-image {
+                width: 100%;
+                margin-top: 60px;
+            }
+        }
 
-                            button {
-                                width: auto;
-                            }
-                        }
-                    }
+        .col-3-about-tournament {
+            position: static;
+            order: 3;
+            max-width: 39%;
+            margin: -10px 0 0 86px;
 
-                    .col-2 {
-                        position: absolute;
-                        order: 2;
-                        top: 120px;
-                        right: 0;
-                        margin: auto;
-                        max-width: 58%;
+            .info-box-second {
+                padding: 40px;
+                margin: auto;
 
-                        img {
-                            width: 100%;
-                            margin-top: 60px;
-                        }
-                    }
+                .row-about-tournament-second {
+                    display: flex;
 
-                    .col-3 {
-                        position: static;
-                        order: 3;
-                        max-width: 39%;
-                        margin: -10px 0 0 86px;
+                    .col {
+                        margin: 0;
 
-                        .info-box-second {
-                            padding: 40px;
-                            margin: auto;
-
-                            .row {
-                                display: flex;
-
-                                .col {
-                                    margin: 0;
-
-                                    p {
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
+                        p {
+                            font-size: 14px;
                         }
                     }
                 }

@@ -1,58 +1,52 @@
-.content-container {
+.content-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $imageMainBackground;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
 
-    .content-home {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $imageMainBackground;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
+.container-home {
+    text-align: center;
+    color: white;
+    margin: 20px 20px 0;
 
-        .container-home {
-            text-align: center;
-            color: white;
-            margin: 20px 20px 0;
+    h1 {
+        margin: 6px 0 16px;
+    }
 
-            h1 {
-                margin: 6px 0 16px;
-            }
+    .arrow-down {
+        display: block;
+        margin: 20px auto 0;
+    }
 
-            .arrow-down {
-                display: block;
-                margin: 20px auto 0;
-            }
+    .description {
+        font-size: 13px;
+    }
 
-            .description {
-                font-size: 13px;
-            }
-
-            .sub-title {
-                color: $subTitleHomeColor;
-            }
-        }
+    .sub-title {
+        color: $subTitleHomeColor;
     }
 }
 
 @media only screen and (min-width: $medium) {
 
-    .content-container {
+    .content-home {
+        height: 700px;
+    }
 
-        .content-home {
-            height: 700px;
+    .container-home {
 
-            .container-home {
+        .arrow-down {
+            display: block;
+            margin: 60px auto 0;
+        }
 
-                .arrow-down {
-                    display: block;
-                    margin: 60px auto 0;
-                }
-
-                .description {
-                    margin: 20px 40px;
-                    font-size: 15px;
-                }
-            }
+        .description {
+            margin: 20px 40px;
+            font-size: 15px;
         }
     }
 
@@ -60,26 +54,23 @@
 
 @media only screen and (min-width: $large) {
 
-    .content-container {
+    .content-home {
+        height: 720px;
+        background-size: 110%;
+    }
 
-        .content-home {
-            height: 720px;
-            background-size: 110%;
+    .container-home {
+        width: $large;
+        margin: auto;
 
-            .container-home {
-                width: $large;
-                margin: auto;
+        h1 {
+            margin: 14px 0 32px;
+        }
 
-                h1 {
-                    margin: 14px 0 32px;
-                }
-
-                .description {
-                    font-size: 14px;
-                    width: 600px;
-                    margin: 0 auto 40px;
-                }
-            }
+        .description {
+            font-size: 14px;
+            width: 600px;
+            margin: 0 auto 40px;
         }
     }
 

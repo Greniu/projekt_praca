@@ -25,8 +25,8 @@ const jb = {
         this.burger = document.getElementById('burger');
         this.closeButton = document.getElementById('closeButton');
         this.navBarNav = document.querySelector('.navbar-nav');
-        this.navigationList = document.querySelector('.navbar-list');
-        this.navigationListHref = document.querySelectorAll('.navbar-list .list a');
+        this.navigationList = document.querySelector('.navbar-menu');
+        this.navigationListHref = document.querySelectorAll('.list-link');
         this.navigationContainer = document.getElementById('navigationContainer');
         this.darkBackground = document.querySelector('.bg-dark');
         this.backgroundImage = document.querySelector('.content-home');
@@ -38,7 +38,7 @@ const jb = {
                 if (window.scrollY >= (contentSwitchId.offsetTop) - 1) {
                     const active = document.getElementsByClassName("active");
                     active[0].className = active[0].className.replace(" active", "");
-                    value.className = " active";
+                    value.className = "list-link active";
                 }
             }.bind(this));
         }.bind(this));

@@ -15,7 +15,7 @@
 <div class="navbar-container" id="navigationContainer">
     <div class="navbar-header">
         <div class="bg-dark"></div>
-        <div class="crop">
+        <div class="navbar-image-crop">
             <img class="logo-img" src="img/jb-logo.svg" alt="Logo">
         </div>
         <div class="burger" id="burger">
@@ -28,13 +28,13 @@
             <div class="bar2"></div>
         </div>
         <div class="navbar-nav">
-            <ul class="navbar-list" id="navigationList">
+            <ul class="navbar-menu" id="navigationList">
                 <li class="first-list"></li>
-                <li class="list"><a href="#home" class="active">Home</a></li>
-                <li class="list"><a href="#aboutTournament">O&nbspturnieju</a></li>
-                <li class="list"><a href="#awards">Nagrody</a></li>
-                <li class="list"><a href="#howJoin">Jak&nbspdołączyć</a></li>
-                <li class="list"><a href="#contentContact">Kontakt</a></li>
+                <li class="navbar-list"><a class="list-link active" href="#home">Home</a></li>
+                <li class="navbar-list"><a class="list-link" href="#aboutTournament">O&nbspturnieju</a></li>
+                <li class="navbar-list"><a class="list-link" href="#awards">Nagrody</a></li>
+                <li class="navbar-list"><a class="list-link" href="#howJoin">Jak&nbspdołączyć</a></li>
+                <li class="navbar-list"><a class="list-link" href="#contentContact">Kontakt</a></li>
             </ul>
         </div>
     </div>
@@ -55,8 +55,8 @@
     </div>
     <div class="content-list content-about-tournament" id="aboutTournament">
         <div class="container-global container-about-tournament">
-            <div class="row">
-                <div class="col-1">
+            <div class="row row-about-tournament-first">
+                <div class="col col-1-about-tournament">
                     <div class="info-box-first">
                         <div class="sub-title">O Turnieju</div>
                         <h3>Graj z najlepszymi, poczuj ducha
@@ -69,13 +69,13 @@
                         <button class="button">Dołącz do turnieju</button>
                     </div>
                 </div>
-                <div class="col-2">
-                    <img src="img/pp-foosball-match.jpg" alt="Foosball match">
+                <div class="col col-2-about-tournament">
+                    <img class="about-tournament-image" src="img/pp-foosball-match.jpg" alt="Foosball match">
                 </div>
-                <div class="col-3">
+                <div class="col col-3-about-tournament">
                     <div class="info-box-second">
                         <div class="sub-title">Dzienne statystyki</div>
-                        <div class="row">
+                        <div class="row row-about-tournament-second">
                             <div class="col">
                                 <div class="number">90</div>
                                 <p>Rozegranych meczów</p>
@@ -203,7 +203,7 @@
                             <textarea class="input-form" id="message" placeholder="Treść wiadomości"></textarea>
                         </div>
                         <div class="form-submit">
-                            <button class="submit" type="submit" value="Send">Wyślij wiadomość</button>
+                            <button class="button submit" type="submit" value="Send">Wyślij wiadomość</button>
                         </div>
                     </form>
                 </div>
