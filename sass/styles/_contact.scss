@@ -1,184 +1,166 @@
-.content-container {
+.content-contact {
+    background: $backgroundBodyColor;
+    margin-top: -150px;
+}
 
-    .content-contact {
-        background: $backgroundBodyColor;
-        margin-top: -150px;
+.container-contact {
+    padding-top: 140px;
+}
 
-        .container-contact {
-            padding-top: 140px;
+.col-1-contact {
+    flex-basis: auto;
 
-            .row {
+    .iamge-contact {
+        width: 100%;
+    }
+}
 
-                .col-1 {
-                    flex-basis: auto;
+.col-2-contact {
+    flex-basis: auto;
+    margin: 20px;
 
-                    img {
-                        width: 100%;
-                    }
-                }
+    .h3-contact {
+        margin: 5px 0 30px;
+    }
+}
 
-                .col-2 {
-                    flex-basis: auto;
-                    margin: 20px;
+.form-contact {
+    background: $formBackgroundColor;
 
-                    h3 {
-                        margin: 5px 0 30px;
-                    }
+    .form-name,
+    .form-email,
+    .form-message {
+        position: relative;
 
-                    .form {
-                        background: $formBackgroundColor;
+        .input-form {
+            font-family: Roboto Regular, sans-serif;
+            border: 0;
+            border-bottom: 1px solid $borderColor;
+            font-size: 14px;
+            padding-bottom: 10px;
+            background: $formBackgroundColor;
+            margin: 0;
+            width: 100%;
+            letter-spacing: 0;
+            resize: none;
+            white-space: nowrap;
+            overflow-x: hidden;
+        }
 
-                        .form-name,
-                        .form-email,
-                        .form-message {
-                            position: relative;
+        .text-validate {
+            display: none;
+            color: $textError;
+            font-size: 12px;
+            padding: 6px;
+            background: $backgroundContactColor;
+        }
+    }
 
-                            .input-form {
-                                font-family: Roboto Regular, sans-serif;
-                                border: 0;
-                                border-bottom: 1px solid $borderColor;
-                                font-size: 14px;
-                                padding-bottom: 10px;
-                                background: $formBackgroundColor;
-                                margin: 0;
-                                width: 100%;
-                                letter-spacing: 0;
-                                resize: none;
-                                white-space: nowrap;
-                                overflow-x: hidden;
-                            }
+    .form-name ,
+    .form-email {
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 
-                            .text-validate {
-                                display: none;
-                                color: $textError;
-                                font-size: 12px;
-                                padding: 6px;
-                                background: $backgroundContactColor;
-                            }
-                        }
+    .form-email {
+        float: right;
+    }
 
-                        .form-name ,
-                        .form-email {
-                            display: inline-block;
-                            margin-bottom: 20px;
-                            width: 100%;
-                        }
+    .form-message {
+        margin-top: 10px;
+        width: calc(100% - 30px);
 
-                        .form-email {
-                            float: right;
-                        }
-
-                        .form-message {
-                            margin-top: 10px;
-                            width: calc(100% - 30px);
-
-                            .input-form {
-                                height: 70px;
-                                border: 1px solid $borderColor;
-                                padding: 15px;
-                                border-radius: 2px;
-                                background: $backgroundSecondBodyColor;
-                            }
-                        }
-                    }
-
-                    button {
-                        width: 100%;
-                    }
-                }
-            }
+        .input-form {
+            height: 70px;
+            border: 1px solid $borderColor;
+            padding: 15px;
+            border-radius: 2px;
+            background: $backgroundSecondBodyColor;
         }
     }
 }
 
+.button-submit {
+    width: 100%;
+}
+
 @media only screen and (min-width: $medium) {
 
-    .content-container {
+    .container-contact {
+        padding: 160px 0 0;
+        margin: auto;
+    }
 
-        .content-contact {
+    .col-1-contact {
+        flex-basis: auto;
+        margin: 20px;
+        height: 400px;
+        overflow: hidden;
 
-            .container-contact {
-                padding: 160px 0 0;
-                margin: auto;
-
-                .row {
-
-                    .col-1 {
-                        flex-basis: auto;
-                        margin: 20px;
-                        height: 400px;
-                        overflow: hidden;
-
-                        img {
-                            margin-top: -35px;
-                        }
-                    }
-
-                    .col-2 {
-                        margin: 60px;
-
-                        .form {
-
-                            .form-name ,
-                            .form-email {
-                                width: 48%;
-                            }
-                        }
-
-                        button {
-                            width: auto;
-                        }
-                    }
-                }
-            }
+        .iamge-contact {
+            margin-top: -35px;
         }
+    }
+
+    .col-2-contact {
+        margin: 60px;
+    }
+
+    .form-contact {
+
+        .form-name ,
+        .form-email {
+            width: 48%;
+        }
+    }
+
+    .button-submit {
+        width: auto;
     }
 
 }
 
 @media only screen and (min-width: $large) {
 
-    .content-container {
+    .content-contact {
+        margin-top: 0;
+    }
 
-        .content-contact {
+    .container-contact {
+        padding: 100px 0;
+    }
+
+    .row-contact {
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .col-1-contact {
+        margin: 0;
+        height: auto;
+        max-width: 45%;
+
+        .iamge-contact {
             margin-top: 0;
+        }
+    }
 
-            .container-contact {
-                padding: 100px 0;
+    .col-2-contact {
+        max-width: 55%;
+        margin: 0 0 0 60px;
+    }
 
-                .row {
-                    margin: auto;
-                    display: flex;
-                    align-items: center;
+    .form-contact {
 
-                    .col-1 {
-                        margin: 0;
-                        height: auto;
-                        max-width: 45%;
+        .form-name ,
+        .form-email {
+            margin-bottom: 10px;
+        }
 
-                        img {
-                            margin-top: 0;
-                        }
-                    }
-
-                    .col-2 {
-                        max-width: 55%;
-                        margin: 0 0 0 60px;
-
-                        .form {
-
-                            .form-name ,
-                            .form-email {
-                                margin-bottom: 10px;
-                            }
-
-                            .form-message {
-                                margin-bottom: 10px;
-                            }
-                        }
-                    }
-                }
-            }
+        .form-message {
+            margin-bottom: 10px;
         }
     }
 

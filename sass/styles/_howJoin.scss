@@ -1,140 +1,117 @@
-.content-container {
+.content-how-join {
+    background: $backgroundSecondBodyColor;
+}
 
-    .content-how-join {
-        background: $backgroundSecondBodyColor;
+.container-how-join {
+    padding: 40px 0;
+}
 
-        .container-how-join {
-            padding: 40px 0;
+.col-1-how-join {
+    flex-basis: auto;
+    flex-grow: 0;
+    z-index: 2;
+}
 
-            .row {
+.button-how-join {
+    width: 100%;
+}
 
-                .col-1 {
-                    flex-basis: auto;
-                    flex-grow: 0;
-                    z-index: 2;
+.col-2-how-join {
+    flex-basis: auto;
+    flex-grow: 0;
+    margin: -40px 0 0;
+    z-index: 1;
+}
 
-                    .info-box-first {
+.info-box-second-how-join {
+    position: relative;
+    padding: 80px 20px 30px;
 
-                        button {
-                            width: 100%;
-                        }
-                    }
-                }
+    .info-box-second-how-join-para {
+        margin: 0;
 
-                .col-2 {
-                    flex-basis: auto;
-                    flex-grow: 0;
-                    margin: -40px 0 0;
-                    z-index: 1;
+        &:before {
+            content: '"';
+            font-family: Millunium-Bold, sans-serif;
+            position: absolute;
+            top: 160px;
+            right: 40px;
+            font-size: 220px;
+            opacity: 0.1;
+        }
+    }
+}
 
-                    .info-box-second {
-                        position: relative;
-                        padding: 80px 20px 30px;
+.social-proof {
+    margin-top: 40px;
 
-                        p {
-                            margin: 0;
+    .image-social-proof {
+        display: inline-block;
+        vertical-align: middle;
+        width: 70px;
+        margin-right: 15px;
+        background: $backgroundBodyColor;
+        border-radius: 100%;
+    }
+}
 
-                            &:before {
-                                content: '"';
-                                font-family: Millunium-Bold, sans-serif;
-                                position: absolute;
-                                top: 160px;
-                                right: 40px;
-                                font-size: 220px;
-                                opacity: 0.1;
-                            }
-                        }
+.social-description {
+    display: inline-block;
+    vertical-align: middle;
 
-                        .social-proof {
-                            margin-top: 40px;
+    .h5-social-description {
+        margin: 0;
+    }
 
-                            img {
-                                display: inline-block;
-                                vertical-align: middle;
-                                width: 70px;
-                                margin-right: 15px;
-                                background: $backgroundBodyColor;
-                                border-radius: 100%;
-                            }
+    .para-social-description {
+        font-size: 12px;
+        margin: 0;
 
-                            .social-description {
-                                display: inline-block;
-                                vertical-align: middle;
-
-                                h5 {
-                                    margin: 0;
-                                }
-
-                                p {
-                                    font-size: 12px;
-
-                                    &:before {
-                                        content: none;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        &:before {
+            content: none;
         }
     }
 }
 
 @media only screen and (min-width: $medium) {
 
-    .content-container {
+    .row-how-join {
+        margin: 20px;
+    }
 
-        .content-how-join {
+    .col-1-how-join,
+    .col-2-how-join {
+        flex-basis: auto;
+        flex-grow: 0;
+        width: 85%;
+    }
 
-            .container-how-join {
+    .button-how-join {
+        width: auto;
+    }
 
-                .row {
-                    margin: 20px;
+    .col-2-how-join {
+        margin: -40px 0 0 15%;
+    }
 
-                    .col-1,
-                    .col-2 {
-                        flex-basis: auto;
-                        flex-grow: 0;
-                        width: 85%;
-                    }
+    .info-box-second-how-join {
+        padding: 80px 30px 30px 100px;
 
-                    .col-1 {
+        .info-box-second-how-join-para {
 
-                        .info-box-first {
-
-                            button {
-                                width: auto;
-                            }
-                        }
-                    }
-
-                    .col-2 {
-                        margin: -40px 0 0 15%;
-
-                        .info-box-second {
-                            padding: 80px 30px 30px 100px;
-
-                            p {
-
-                                &:before {
-                                    top: 120px;
-                                    left: 40px;
-                                    font-size: 120px;
-                                    opacity: 0.4;
-                                }
-                            }
-
-                            .social-description {
-
-                                p {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-                }
+            &:before {
+                top: 120px;
+                left: 40px;
+                font-size: 120px;
+                opacity: 0.4;
             }
+        }
+    }
+
+    .social-description {
+
+        .para-social-description {
+            font-size: 14px;
         }
     }
 
@@ -142,62 +119,46 @@
 
 @media only screen and (min-width: $large) {
 
-    .content-container {
+    .container-how-join {
+        padding: 100px 0;
+    }
 
-        .content-how-join {
+    .row-how-join {
+        margin: auto;
+        display: flex;
+    }
 
-            .container-how-join {
-                padding: 100px 0;
+    .col-1-how-join,
+    .col-2-how-join {
+        max-width: 51%;
+    }
 
-                .row {
-                    margin: auto;
-                    display: flex;
+    .button-how-join {
+        width: auto;
+    }
 
-                    .col-1,
-                    .col-2 {
-                        max-width: 51%;
+    .col-2-how-join {
+        margin: 50px 0 0 -60px;
+    }
 
-                        p {
+    .info-box-second-how-join {
+        padding: 40px 30px 40px 140px;
 
-                        }
-                    }
+        .info-box-second-how-join-para {
 
-                    .col-1 {
-
-                        .info-box-first {
-
-                            button {
-                                width: auto;
-                            }
-                        }
-                    }
-
-                    .col-2 {
-                        margin: 50px 0 0 -60px;
-
-                        .info-box-second {
-                            padding: 40px 30px 40px 140px;
-
-                            p {
-
-                                &:before {
-                                    top: 76px;
-                                    left: 80px;
-                                    font-size: 120px;
-                                    opacity: 0.4;
-                                }
-                            }
-
-                            .social-description {
-
-                                p {
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-                }
+            &:before {
+                top: 76px;
+                left: 80px;
+                font-size: 120px;
+                opacity: 0.4;
             }
+        }
+    }
+
+    .social-description {
+
+        .para-social-description {
+            font-size: 14px;
         }
     }
 
