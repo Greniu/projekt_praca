@@ -57,7 +57,6 @@ p {
     line-height: 22px;
 }
 
-
 .bg-dark {
     position: fixed;
     background: $darkBackgroundColor;
@@ -87,10 +86,10 @@ p {
     margin: 0 10px;
     box-shadow: 0 3px 10px -5px $shadowColor;
     background: $backgroundBoxFirstColor;
+}
 
-    p {
-        color: $secondaryParagraphColor;
-    }
+.para-info-box-first {
+    color: $secondaryParagraphColor;
 }
 
 .info-box-second {
@@ -111,12 +110,12 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
 
-    .col {
-        flex-basis: 0;
-        flex-grow: 1;
-        max-width: 100%;
-    }
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
 }
 
 @media only screen and (min-width: $medium) {

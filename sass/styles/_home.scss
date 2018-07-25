@@ -12,23 +12,23 @@
     text-align: center;
     color: white;
     margin: 20px 20px 0;
+}
 
-    h1 {
-        margin: 6px 0 16px;
-    }
+.h1-home {
+    margin: 6px 0 16px;
+}
 
-    .arrow-down {
-        display: block;
-        margin: 20px auto 0;
-    }
+.arrow-down-home {
+    display: block;
+    margin: 20px auto 0;
+}
 
-    .description {
-        font-size: 13px;
-    }
+.description-home {
+    font-size: 13px;
+}
 
-    .sub-title {
-        color: $subTitleHomeColor;
-    }
+.sub-title-home {
+    color: $subTitleHomeColor;
 }
 
 @media only screen and (min-width: $medium) {
@@ -37,17 +37,14 @@
         height: 700px;
     }
 
-    .container-home {
+    .arrow-down-home {
+        display: block;
+        margin: 60px auto 0;
+    }
 
-        .arrow-down {
-            display: block;
-            margin: 60px auto 0;
-        }
-
-        .description {
-            margin: 20px 40px;
-            font-size: 15px;
-        }
+    .description-home {
+        margin: 20px 40px;
+        font-size: 15px;
     }
 
 }
@@ -62,16 +59,16 @@
     .container-home {
         width: $large;
         margin: auto;
+    }
 
-        h1 {
-            margin: 14px 0 32px;
-        }
+    .h1-home {
+        margin: 14px 0 32px;
+    }
 
-        .description {
-            font-size: 14px;
-            width: 600px;
-            margin: 0 auto 40px;
-        }
+    .description-home {
+        font-size: 14px;
+        width: 600px;
+        margin: 0 auto 40px;
     }
 
 }

@@ -107,7 +107,8 @@ p {
   box-shadow: 0 3px 10px -5px #000;
   background: #fff;
 }
-.info-box-first p {
+
+.para-info-box-first {
   color: #545454;
 }
 
@@ -130,7 +131,8 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-.row .col {
+
+.col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
@@ -227,16 +229,18 @@ p {
   background: #f5f5f5;
 }
 
-.row-about-tournament-first .button {
+.button-about-tournament {
   width: 100%;
 }
-.row-about-tournament-first .col-1-about-tournament {
+
+.col-1-about-tournament {
   flex-basis: auto;
   flex-grow: 0;
   max-width: 100%;
   z-index: 2;
 }
-.row-about-tournament-first .col-2-about-tournament {
+
+.col-2-about-tournament {
   flex-basis: auto;
   flex-grow: 0;
   margin-top: -40px;
@@ -244,43 +248,45 @@ p {
   overflow: hidden;
   z-index: 1;
 }
-.row-about-tournament-first .col-2-about-tournament .about-tournament-image {
+.col-2-about-tournament .about-tournament-image {
   width: 200%;
   margin-left: -36%;
 }
 @media only screen and (min-width: 520px) {
-  .row-about-tournament-first .col-2-about-tournament .about-tournament-image {
+  .col-2-about-tournament .about-tournament-image {
     width: 100%;
     margin-left: 0;
   }
 }
-.row-about-tournament-first .col-3-about-tournament {
+
+.col-3-about-tournament {
   max-width: 100%;
   margin: auto;
   z-index: 1;
 }
-.row-about-tournament-first .col-3-about-tournament .info-box-second {
+.col-3-about-tournament .info-box-second-about-tournament {
   padding: 40px;
   width: auto;
   margin: -5px auto 0;
 }
-.row-about-tournament-first .col-3-about-tournament .info-box-second .sub-title {
+.col-3-about-tournament .info-box-second-about-tournament .sub-title-about-tournament {
   color: #fff;
   text-align: center;
   margin-bottom: 20px;
 }
-.row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second {
+
+.row-about-tournament-second {
   display: block;
 }
-.row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second .col {
+.row-about-tournament-second .col-about-tournament-second {
   margin-top: 30px;
 }
-.row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second .col .number {
+.row-about-tournament-second .col-about-tournament-second .number {
   font-family: Millunium-Bold, sans-serif;
   text-align: center;
   font-size: 42px;
 }
-.row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second .col p {
+.row-about-tournament-second .col-about-tournament-second .para-about-tournament {
   font-size: 16px;
   margin: 0;
   text-align: center;
@@ -289,53 +295,60 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .button-about-tournament {
+    width: inherit;
+  }
+
   .row-about-tournament-first {
     margin: 0 20px;
   }
-  .row-about-tournament-first .col-1-about-tournament {
+
+  .col-1-about-tournament {
     order: 1;
     max-width: 75%;
   }
-  .row-about-tournament-first .col-1-about-tournament .info-box-first .button {
-    width: inherit;
-  }
-  .row-about-tournament-first .col-2-about-tournament {
+
+  .col-2-about-tournament {
     order: 3;
     margin: -20px 0 0 40px;
     max-width: 75%;
   }
-  .row-about-tournament-first .col-2-about-tournament .about-tournament-image {
+  .col-2-about-tournament .about-tournament-image {
     width: 100%;
     margin: auto;
   }
-  .row-about-tournament-first .col-3-about-tournament {
+
+  .col-3-about-tournament {
     right: 20px;
     position: absolute;
     max-width: 29%;
     order: 2;
     margin: 110px 0 0 -30px;
   }
-  .row-about-tournament-first .col-3-about-tournament .info-box-second {
+  .col-3-about-tournament .info-box-second-about-tournament {
     padding: 40px 20px 40px 50px;
     margin: auto;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .button-about-tournament {
+    width: auto;
+  }
+
   .row-about-tournament-first {
     margin: auto;
   }
-  .row-about-tournament-first .col-1-about-tournament {
+
+  .col-1-about-tournament {
     order: 1;
     max-width: 100%;
   }
-  .row-about-tournament-first .col-1-about-tournament .info-box-first {
+  .col-1-about-tournament .info-box-first-about-tournament {
     width: 43%;
     margin: 0;
   }
-  .row-about-tournament-first .col-1-about-tournament .info-box-first .button {
-    width: auto;
-  }
-  .row-about-tournament-first .col-2-about-tournament {
+
+  .col-2-about-tournament {
     position: absolute;
     order: 2;
     top: 120px;
@@ -343,27 +356,28 @@ p {
     margin: auto;
     max-width: 58%;
   }
-  .row-about-tournament-first .col-2-about-tournament .about-tournament-image {
-    width: 100%;
+  .col-2-about-tournament .about-tournament-image {
     margin-top: 60px;
   }
-  .row-about-tournament-first .col-3-about-tournament {
+
+  .col-3-about-tournament {
     position: static;
     order: 3;
     max-width: 39%;
     margin: -10px 0 0 86px;
   }
-  .row-about-tournament-first .col-3-about-tournament .info-box-second {
+  .col-3-about-tournament .info-box-second-about-tournament {
     padding: 40px;
     margin: auto;
   }
-  .row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second {
+
+  .row-about-tournament-second {
     display: flex;
   }
-  .row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second .col {
+  .row-about-tournament-second .col-about-tournament-second {
     margin: 0;
   }
-  .row-about-tournament-first .col-3-about-tournament .info-box-second .row-about-tournament-second .col p {
+  .row-about-tournament-second .col-about-tournament-second .para-about-tournament {
     font-size: 14px;
   }
 }
@@ -372,29 +386,35 @@ p {
   margin-top: -110px;
   padding-bottom: 40px;
 }
-.content-awards .container-awards {
+
+.container-awards {
   text-align: center;
   padding-top: 140px;
   margin: 20px;
 }
-.content-awards .container-awards .sub-title {
+
+.sub-title-awards {
   color: #7f7f7f;
 }
-.content-awards .container-awards h3 {
+
+.h3-awards {
   width: auto;
 }
-.content-awards .container-awards .row {
+
+.row-awards {
   display: block;
 }
-.content-awards .container-awards .row .col h2 {
+
+.h2-awards {
   font-size: 40px;
   color: #999;
   margin-bottom: 20px;
 }
-.content-awards .container-awards .row .col h2.first-place {
+.h2-awards.first-place {
   color: #3fae49;
 }
-.content-awards .container-awards .row .col p {
+
+.para-award {
   font-family: Raleway-Bold, sans-serif;
   font-size: 18px;
   width: 90%;
@@ -405,38 +425,45 @@ p {
   .content-awards {
     padding-bottom: 80px;
   }
-  .content-awards .container-awards {
+
+  .container-awards {
     padding-top: 200px;
     margin: auto;
   }
-  .content-awards .container-awards h3 {
+
+  .h3-awards {
     width: 600px;
   }
-  .content-awards .container-awards .row {
+
+  .row-awards {
     display: flex;
     justify-content: center;
   }
-  .content-awards .container-awards .row .col {
+
+  .col-awards {
     flex-basis: auto;
     flex-grow: 0;
     width: 33%;
   }
-  .content-awards .container-awards .row .col .image-reward {
+
+  .image-reward {
     display: flex;
     justify-content: center;
     height: 80px;
   }
-  .content-awards .container-awards .row .col p {
+
+  .para-award {
     font-size: 14px;
     line-height: 20px;
     margin: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .content-awards .container-awards .row {
+  .row-awards {
     margin: auto;
   }
-  .content-awards .container-awards .row .col {
+
+  .col-awards {
     flex-basis: 0;
     flex-grow: 1;
     width: auto;
@@ -635,17 +662,21 @@ p {
   color: white;
   margin: 20px 20px 0;
 }
-.container-home h1 {
+
+.h1-home {
   margin: 6px 0 16px;
 }
-.container-home .arrow-down {
+
+.arrow-down-home {
   display: block;
   margin: 20px auto 0;
 }
-.container-home .description {
+
+.description-home {
   font-size: 13px;
 }
-.container-home .sub-title {
+
+.sub-title-home {
   color: #fff;
 }
 
@@ -654,11 +685,12 @@ p {
     height: 700px;
   }
 
-  .container-home .arrow-down {
+  .arrow-down-home {
     display: block;
     margin: 60px auto 0;
   }
-  .container-home .description {
+
+  .description-home {
     margin: 20px 40px;
     font-size: 15px;
   }
@@ -673,10 +705,12 @@ p {
     width: 1200px;
     margin: auto;
   }
-  .container-home h1 {
+
+  .h1-home {
     margin: 14px 0 32px;
   }
-  .container-home .description {
+
+  .description-home {
     font-size: 14px;
     width: 600px;
     margin: 0 auto 40px;
