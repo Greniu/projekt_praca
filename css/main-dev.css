@@ -278,15 +278,16 @@ p {
 .row-about-tournament-second {
   display: block;
 }
-.row-about-tournament-second .col-about-tournament-second {
+
+.col-about-tournament-second {
   margin-top: 30px;
 }
-.row-about-tournament-second .col-about-tournament-second .number {
+.col-about-tournament-second .number {
   font-family: Millunium-Bold, sans-serif;
   text-align: center;
   font-size: 42px;
 }
-.row-about-tournament-second .col-about-tournament-second .para-about-tournament {
+.col-about-tournament-second .para-about-tournament {
   font-size: 16px;
   margin: 0;
   text-align: center;
@@ -374,10 +375,11 @@ p {
   .row-about-tournament-second {
     display: flex;
   }
-  .row-about-tournament-second .col-about-tournament-second {
+
+  .col-about-tournament-second {
     margin: 0;
   }
-  .row-about-tournament-second .col-about-tournament-second .para-about-tournament {
+  .col-about-tournament-second .para-about-tournament {
     font-size: 14px;
   }
 }
