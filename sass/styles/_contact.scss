@@ -1,10 +1,6 @@
 .content-contact {
     background: $backgroundBodyColor;
-    margin-top: -150px;
-}
-
-.container-contact {
-    padding-top: 140px;
+    margin-top: -80px;
 }
 
 .col-1-contact {
@@ -86,6 +82,10 @@
 }
 
 @media only screen and (min-width: $medium) {
+
+    .content-contact {
+        margin-top: -150px;
+    }
 
     .container-contact {
         padding: 160px 0 0;

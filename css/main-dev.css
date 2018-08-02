@@ -473,11 +473,7 @@ p {
 }
 .content-contact {
   background: #fff;
-  margin-top: -150px;
-}
-
-.container-contact {
-  padding-top: 140px;
+  margin-top: -80px;
 }
 
 .col-1-contact {
@@ -554,6 +550,10 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .content-contact {
+    margin-top: -150px;
+  }
+
   .container-contact {
     padding: 160px 0 0;
     margin: auto;
